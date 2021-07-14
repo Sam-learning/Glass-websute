@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #137260;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle1,
+.circle2{
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.7),rgba(255, 255, 255, 0.1)
+    );
+    min-height: 20rem;
+    min-width: 20rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle1{
+    top:5%;
+    right:15%;
+    border-radius: 50%;
+}
+.circle2{
+    bottom:5%;
+    left:10%;
+    border-radius: 50%;
+}
+
+section{
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.7),rgba(255,255,255,0.4)
+    );
+    width: 60%;
+    min-height: 70vh;
+    display: flex;
+    border-radius: 2rem;
+    z-index: 3;  /*靠前靠後，數字越大越靠前*/
+    backdrop-filter : blur(2rem);
+}
+
+.left-box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.8),rgba(255,255,255,0.5)
+    );
+    border-radius: 2rem;
+}
+
+.profile{
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.profile img{
+    border-radius: 50%;
+    
+}
+
+.sidebar{
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.right-box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.title{
+    height: 20vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.sidebar div{
+    margin-bottom: 2rem;
+}
+
+.card{
+    height:50vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.card div{
+    border-radius: 2rem;
+    width: 100%;
+    min-height: 3rem;
+    background: linear-gradient(to right bottom, 
+        rgba(255,255,255,0.8),rgba(255, 255, 255, 0.5)
+    );
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
